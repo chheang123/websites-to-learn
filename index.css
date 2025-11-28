@@ -2,13 +2,16 @@ body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
+  
 }
 @media (max-width: 600px) {
   .navbar {
-    gap: 18px; /* បន្ទះចន្លោះតូច */
+    gap: 10px; /* បន្ទះចន្លោះតូច */
     padding: 10px 0;
     margin-top: 20px;
+     
   }
+  
   .navbar a {
     font-size: 14px; /* អក្សរតូចសម */
   }
@@ -24,7 +27,7 @@ body {
   justify-content: center;
   align-items: center;
   gap: 60px;
-  flex-wrap: nowrap;
+
 }
 .navbar a {
   color: rgb(0, 0, 0);
@@ -38,15 +41,19 @@ body {
   text-shadow: 0px 0px 10px yellow;
 }
 .tolearn samp {
-    
+ 
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
  "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   color: rgb(250, 6, 222);
 }
+.tolearn {
+  margin-top: 5%; /* ចន្លោះចុះក្រោម navbar */
+  text-align: center; /* បើចង់កណ្ដាល */
+}
 
 .box {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 box ក្នុង 1 ជួរ */
+  grid-template-columns:repeat(3, 1fr); /* 3 box ក្នុង 1 ជួរ */
   gap: 25px;
   max-width: 700px;
   margin: 190px auto; /* កណ្ដាលទំព័រ */
@@ -75,6 +82,7 @@ body {
   .box {
     grid-template-columns: repeat(1, 1fr); /* 1 box ក្នុង 1ជួរ */
     margin: 100px auto;
+     margin: 0 15px;   /* ឆ្ងាយពីគែមទូរស័ព្ទ 15px */
   }
   .box div {
     padding: 70px 0;
