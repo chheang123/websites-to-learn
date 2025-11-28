@@ -1,0 +1,58 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+.navbar {
+  margin-top: 3%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  flex-wrap: nowrap;
+}
+.navbar a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.navbar a:hover {
+  color: rgb(255, 0, 225);
+  text-shadow: 0px 0px 10px yellow;
+}
+.tolearn samp {
+    
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+ "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: rgb(250, 6, 222);
+}
+
+.box {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 box ក្នុង 1 ជួរ */
+  gap: 25px;
+  max-width: 700px;
+  margin: 190px auto; /* កណ្ដាលទំព័រ */
+}
+.box div {
+  background: rgb(0, 15, 11);
+  padding: 100px 0;
+  border-radius: 10px;
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25);
+  transition: 0.3s;
+}
+
+.box div:hover {
+  background: rgb(248, 0, 227);
+  transform: scale(1.05);
+}
+.box img {
+  width: 80px;
+  margin-top: -70px; /* រូបលើកឡើង */
+}
