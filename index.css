@@ -4,13 +4,28 @@ body {
   text-align: center;
   
 }
+
 @media (max-width: 600px) {
   .navbar {
     gap: 10px; /* បន្ទះចន្លោះតូច */
     padding: 10px 0;
     margin-top: 20px;
-     
   }
+
+  @media (max-width: 600px) {
+  .navbar {
+    gap: 8px;        /* ចន្លោះតូច */
+    padding: 8px 0;
+  }
+
+  .navbar img {
+    width: 38px;     /* logo តូច */
+  }
+
+  .navbar a {
+    font-size: 14px; /* អក្សរតូច */
+  }
+}
   
   .navbar a {
     font-size: 14px; /* អក្សរតូចសម */
@@ -19,26 +34,47 @@ body {
 .navbar img{
     width: 55px;
 }
-
 .navbar {
   margin-top: 3%;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 60px;
-
+  gap: 100px;
+  flex-wrap:1;
 }
+.navbar {
+  margin-top: 1%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  flex-direction: row;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column; /* ★ ចេញជាជួរឈរ */
+    gap: 15px;
+  }
+  .navbar a {
+    font-size: 18px;
+  }
+}
+
 .navbar a {
   color: rgb(0, 0, 0);
   text-decoration: none;
   font-size: 20px;
   font-weight: bold;
   transition: 0.3s;
+ 
 }
 .navbar a:hover {
   color: rgb(255, 0, 225);
-  text-shadow: 0px 0px 10px yellow;
+  text-shadow: 0px 0px 10px rgb(0, 255, 238);
 }
 .tolearn samp {
  
@@ -54,20 +90,20 @@ body {
 .box {
   display: grid;
   grid-template-columns:repeat(3, 1fr); /* 3 box ក្នុង 1 ជួរ */
-  gap: 25px;
+  gap: 20px;
   max-width: 700px;
-  margin: 190px auto; /* កណ្ដាលទំព័រ */
+  margin: 100px auto; /* កណ្ដាលទំព័រ */
 }
 .box div {
   background: rgb(0, 15, 11);
-  padding: 100px 0;
-  border-radius: 11px;
+  padding: 80px 0;
+  border-radius: 10px;
   font-size: 25px;
   font-weight: bold;
   text-align: center;
   color: white;
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25);
-  transition: 0.3s;
+  transition: 0.2s;
 }
 
 .box div:hover {
@@ -82,7 +118,7 @@ body {
   .box {
     grid-template-columns: repeat(1, 1fr); /* 1 box ក្នុង 1ជួរ */
     margin: 100px auto;
-     margin: 0 15px;   /* ឆ្ងាយពីគែមទូរស័ព្ទ 15px */
+     margin: 0 10px;   /* ឆ្ងាយពីគែមទូរស័ព្ទ 15px */
   }
   .box div {
     padding: 70px 0;
@@ -91,4 +127,15 @@ body {
   .box img {
     width: 70px;
   }
+}
+.about{
+  background: rgb(21, 16, 45);
+  color: white;
+}
+.about h1{
+  font-size: 40px;
+}
+.about img{
+  border-radius: 15px;
+   margin: 0 10px;   /* ឆ្ងាយពីគែមទូរស័ព្ទ 15px */
 }
