@@ -129,7 +129,7 @@ body {
   }
 }
 .about{
-  background: rgb(21, 16, 45);
+  background: rgb(26, 21, 55);
   color: white;
 }
 .about img{
@@ -137,50 +137,9 @@ body {
    margin: 0 10px;   /* ឆ្ងាយពីគែមទូរស័ព្ទ 15px */
      
 }
-.aboutimg img{
-  width: 100%;     /* រូបតូចតាមទំហំ phone */
-  height: auto;    /* មិនបំលែងរូប */
-  max-width: 100%;
-  display: block;
-  border-radius: 10px;
-  margin: 15px 0;
-}
-@media (max-width: 600px) {
-  img {
-    max-width: 90%;      /* កាត់ទំហំបន្ត */
-    margin: 0 auto;      /* រៀបក្នុងកណ្ដាល */
-    border-radius: 10px; /* បន្ថែម effets (ទាមទារ) */
-  }
-}
-.abouthcj{
-   background: rgb(35, 30, 65);
-  padding: 25px;
-  border-radius: 12px;
-  width: 280px;
-  transition: 0.3s;
-  cursor: pointer;
-  box-shadow: 0 0 8px rgba(255, 255, 255, 0.1);
-}
-.abouthcj:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 0 15px rgba(255, 255, 255, 0.25);
-}
-.abouthcj h2 {
-  margin-bottom: 15px;
-  font-size: 25px;
-}
-
-/* 📌 Image inside card */
-.abouthcj img {
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
-}
-
-/* 📱 Responsive for Phone */
-@media (max-width: 600px) {
-  .abouthcj  {
-    width: 90%;
-  }
+.ABOUT{
+  background: black;
+  margin-top: 7%;
+  
 }
 
